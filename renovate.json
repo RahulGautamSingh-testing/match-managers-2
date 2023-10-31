@@ -1,7 +1,10 @@
 {
-  "packageRules":[
+  "packageRules": [
     {
-      "matchManagers": ["regex", "npm"],
+      "matchManagers": [
+        "custom.regex",
+        "npm"
+      ],
       "groupName": "special-managers"
     }
   ],
@@ -9,7 +12,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["index.ts"],
+      "fileMatch": [
+        "index.ts"
+      ],
       "matchStrings": [
         "default: '(?<depName>ghcr.io/containerbase/sidecar):(?<currentValue>.*)'"
       ],
