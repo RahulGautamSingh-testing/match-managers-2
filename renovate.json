@@ -5,7 +5,7 @@
       "groupName": "special-managers"
     }
   ],
-  "config-migration": true,
+  "configMigration": true,
   "customManagers": [
     {
       "customType": "regex",
