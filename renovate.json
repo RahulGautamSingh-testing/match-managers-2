@@ -1,0 +1,19 @@
+{
+  "packageRules":[
+    {
+      "matchManagers": ["regex", "npm"],
+      "groupName": "special-managers"
+    }
+  ],
+  "config-migration": true,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["config/options/index.ts"],
+      "matchStrings": [
+        "default: '(?<depName>ghcr.io/containerbase/sidecar):(?<currentValue>.*)'"
+      ],
+      "datasourceTemplate": "docker"
+    }
+  ]
+}
