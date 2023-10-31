@@ -1,7 +1,7 @@
 {
   "packageRules":[
     {
-      "matchManagers": ["regex", "npm"],
+      "matchManagers": ["regex", "invalid-manager", "custom.wannabe-custom-mgr"],
       "groupName": "special-managers"
     }
   ],
